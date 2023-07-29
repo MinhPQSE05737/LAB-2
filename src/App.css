@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.App .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App .button-group button {
+  color: white;
+  background-color: #50a2ad;
+  flex: 1;
+  margin: 0.5em;
+}
+
+.App .add-task-container {
+  border: 1px solid grey;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+.App input {
+  margin: 1em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.App button {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  color: white;
+  max-width: 300;
+  background-color: red;
+}
+
+
+
+.App button:hover {
+  opacity: 0.8;
+}
+
+.App div {
+  margin: 1em 0;
+}
+
+.App span {
+  margin-right: 1em;
+}
+
+.App .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  /* padding: 1em; */
+  max-width: 600px;
+}
+
+.App .todo-item span,
+.App .todo-item input {
+  flex: 1;
+  margin-left: 10px;
+  border-color: grey;
+  border-width: 0.5px;
+}
+
+.App .todo-item .button-group {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px;
+  width: 100%;
+}
+
+.App .todo-item .button-group button {
+  margin-left: 1em;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
